@@ -11,14 +11,9 @@ class ParkingLotForAntilia:
     # A function to initialise the Parking Lot size in Antilia
     def setSlotNumber(self, number):
         self.number_of_slots = number
-        if(len(self.slotNumbers) == 0):
-            for i in range(0, number):
-                self.slotNumbers.append(0)
-            print("Created a parking of "+ str(number) +" slots")
-        else:
-            print("Sorry!! This Antilia is already in progress, to start from scratch reinitiate the program")
-
-
+        for i in range(0, number):
+          self.slotNumbers.append(0)
+        print("Created a parking of "+ str(number) +" slots")
 
 
 
